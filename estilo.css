@@ -67,7 +67,11 @@ header nav a:hover{
     margin-top: auto;
     margin-right: auto;
     margin-left: auto;
-    
+    transition: all 0.5s;
+}
+.whatsapp:hover{
+    transform: scale(1.2);
+    transition: all 0.5s;
 }
 
 .whatsapp i{
@@ -88,11 +92,13 @@ footer .redes{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-
 }
 footer .redes i{
     font-size: 35px;
     color: rgb(0, 0, 0);
+}
+.redes i:hover{
+    color: white;
 
 }
 
@@ -193,6 +199,11 @@ main h1{
     object-fit: cover;
     margin-bottom: 10px;
     border: solid 1px black;
+    transition: all 0.5s;
+}
+.trabajos:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 
