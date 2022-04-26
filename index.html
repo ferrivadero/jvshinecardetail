@@ -1,90 +1,127 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JV Shine Car Detail</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="icon" href="img/icologo.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="estilo.css">
 </head>
-    
+
 
 <body>
     <header>
         <div>
-        <a href="index.html"><img src="img/logo.jpg" alt="logo"></a>
+            <a href="index.html"><img src="img/logo.jpg" alt="logo"></a>
         </div>
-        <nav >
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="trabajos.html">Trabajos</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+    </header>
+        <!--inicio navbar-->
+        <nav class="navbar navbar-expand-md  navbar-dark">
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="trabajos.html">Trabajos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
-    </header>    
-        <main >  
-           
-            <h1 class="titulo">Inicio</h1>
-            <section class="index">
-              <div class="imgPrincipal">
-                <img class="porche" src="img/porche.jpg" alt="porche"> 
-              </div>
-              <div class="info"> 
-              <h2 class="tituloIndex">Deja tu Vehiculo como nuevo.</h2>
-              <p class="inicio">Con nuestro servicio de detailing podras darle ese brillo que siempre quisiste, contamos con un grupo de profesionales capacitados para la restauracion y proteccion de automoviles.</p> 
-              </div>
-              <h2 class="tituloMarcas">Trabajamos con las mejores marcas</h2>
-              <div class="marcas">
-                    
-                        <div class="img2 imgMarcas">
-                            <img  src="img/DEWALT.jpg" alt="">
-                        </div>
-                        <div class="img3 imgMarcas">
-                            <img  src="img/rupes.jpg" alt="">
-                        </div>
-                        <div class="img4 imgMarcas">
-                            <img  src="img/toxic.jpg" alt="">
-                        </div>
-                        <div class="img5 imgMarcas">
-                            <img  src="img/sonax.png" alt="">
-                        </div>
-                        <div class="img1 imgMarcas">
-                            <img  src="img/kochchemie.png" alt="">
-                        </div>
-                    
+        <!--fin navbar-->
+    
+    <main>
+
+        <h1 class="titulo">Inicio</h1>
+        <section class="index">
+            <div class="imgPrincipal">
+                <img class="porche" src="img/porche.jpg" alt="porche">
+            </div>
+            <div class="info">
+                <h2 class="tituloIndex">Deja tu Vehiculo como nuevo.</h2>
+                <p class="inicio">Con nuestro servicio de detailing podras darle ese brillo que siempre quisiste,
+                    contamos con un grupo de profesionales capacitados para la restauracion y proteccion de automoviles.
+                </p>
+            </div>
+            <h2 class="tituloMarcas">Trabajamos con las mejores marcas</h2>
+            <div class="marcas">
+
+                <div class="img2 imgMarcas">
+                    <img src="img/DEWALT.jpg" alt="">
+                </div>
+                <div class="img3 imgMarcas">
+                    <img src="img/rupes.jpg" alt="">
+                </div>
+                <div class="img4 imgMarcas">
+                    <img src="img/toxic.jpg" alt="">
+                </div>
+                <div class="img5 imgMarcas">
+                    <img src="img/sonax.png" alt="">
+                </div>
+                <div class="img1 imgMarcas">
+                    <img src="img/kochchemie.png" alt="">
                 </div>
 
-            <section class="contenedorReseñas" >
+            </div>
+
+            <section class="contenedorReseñas">
                 <div class="reseñas">
-                  <h2 class="tituloIndex">Reseñas</h2>
-                  <p class="textoreseñas">Lorem ipsum dolor sit amet consectetur adipisicing elit. In id totam cupiditate eius. Enim aut laborum sit excepturi eaque dolore?</p>
+                    <h2 class="tituloIndex">Reseñas</h2>
+                    <p class="textoreseñas">Lorem ipsum dolor sit amet consectetur adipisicing elit. In id totam
+                        cupiditate eius. Enim aut laborum sit excepturi eaque dolore?</p>
                 </div>
             </section>
         </section>
-        </main>   
-        <div class="whatsapp">
-            <a href="https://wa.me/+5493516974598" target="_blank"><i id="iconowhatsapp" class="fa-brands fa-whatsapp"></i></a>
-        </div>
+    </main>
+    <div class="whatsapp">
+        <a href="https://wa.me/+5493516974598" target="_blank"><i id="iconowhatsapp"
+                class="fa-brands fa-whatsapp"></i></a>
+    </div>
     <footer>
-           
-           <div class="redes">
-               <h3>Seguinos en nuestras redes:</h3>
-            <a  href="https://www.facebook.com/JVshinecardetail" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
-            <a  href=""><i class="fa-brands fa-instagram-square"></i></a>
-            <a  href=""><i class="fa-brands fa-youtube"></i></a>
-           </div>
-           <div class="bloquemapa" >
+
+        <div class="redes">
+            <h3>Seguinos en nuestras redes:</h3>
+            <a href="https://www.facebook.com/JVshinecardetail" target="_blank"><i
+                    class="fa-brands fa-facebook-square"></i></a>
+            <a href=""><i class="fa-brands fa-instagram-square"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="bloquemapa">
             <h3>Visitanos en:</h3>
-            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.5967141857936!2d-64.17090798255614!3d-31.37010619999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329835c810c20b%3A0x430d209e924d3759!2sJuan%20Casacuberta%202953%2C%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1648126119844!5m2!1ses!2sar" width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        
+            <iframe class="mapa"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.5967141857936!2d-64.17090798255614!3d-31.37010619999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329835c810c20b%3A0x430d209e924d3759!2sJuan%20Casacuberta%202953%2C%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1648126119844!5m2!1ses!2sar"
+                width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
     </footer>
-      <p class="derechos">Todos los derechos reservados.</p>
-
-
+    <p class="derechos">Todos los derechos reservados.</p>
+    <!--inicio separate-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+<!--fin separate-->
 </body>
+
 </html>
