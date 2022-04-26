@@ -39,7 +39,7 @@ header div img {
 }
 
 /*------------------footer--------------*/
-.whatsapp {
+#whatsapp {
     position: fixed;
     bottom: 20px;
     right: 40px;
@@ -50,22 +50,20 @@ header div img {
     height: 50px;
     border-radius: 50%;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.whatsapp a {
-    margin-bottom: auto;
-    margin-top: auto;
-    margin-right: auto;
-    margin-left: auto;
-    transition: all 0.5s;
+#iconowhatsapp {
+     transition: all 0.5s;
 }
 
-.whatsapp:hover {
+#whatsapp:hover {
     transform: scale(1.2);
     transition: all 0.5s;
 }
 
-.whatsapp i {
+#whatsapp i {
     color: white;
 }
 
