@@ -1,736 +1,674 @@
+@charset "UTF-8";
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /*-----------------general-----------*/
 body {
-    margin: 0px 0px 0px 0px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0px 0px 0px 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(208, 208, 208);
+  background: #000000;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, dimgrey, #000000);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, dimgrey, #000000);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-
-header {
-    width: 100%;
-    height: 150px;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+body main {
+  margin: 0;
+  border-top: solid 5px rgb(113, 0, 117);
 }
-
-header div {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+body header {
+  width: 100%;
+  height: 150px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
-header div img {
-    height: 150px;
-    width: 100%;
-    object-fit: contain;
+body header div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+body header div img {
+  height: 150px;
+  width: 100%;
+  object-fit: contain;
 }
 
 .navbar {
-    background-color: black;
+  background-color: black;
 }
 
 .collapse {
-    justify-content: center;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
 /*------------------footer--------------*/
 #whatsapp {
-    position: fixed;
-    bottom: 20px;
-    right: 40px;
-    font-size: 40px;
-    color: rgb(255, 255, 255);
-    background-color: rgb(0, 199, 43);
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.5s;
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 199, 43);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
 }
-
-#whatsapp:hover {
-    transform: scale(1.2);
-    transition: all 0.5s;
-}
-
 #whatsapp i {
-    color: white;
+  color: white;
+}
+#whatsapp:hover {
+  transform: scale(1.2);
+  transition: all 0.5s;
 }
 
 footer {
-    border-top: solid 20px rgb(113, 0, 117);
-    background-color: dimgrey;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  border-top: solid 20px rgb(113, 0, 117);
+  background-color: dimgrey;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
-
 footer .redes {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
-
 footer .redes i {
-    font-size: 35px;
-    color: rgb(0, 0, 0);
+  font-size: 35px;
+  color: rgb(0, 0, 0);
 }
-
-.redes i:hover {
-    color: white;
-
+footer .redes i:hover {
+  color: white;
 }
 
 .derechos {
-    text-align: center;
-    background-color: dimgrey;
-    font-size: 16px;
-    font-style: italic;
+  text-align: center;
+  background-color: dimgrey;
+  font-size: 16px;
+  font-style: italic;
 }
 
 /*-----------index------------*/
-
-main h1 {
-    text-align: center;
-    font-size: 20px;
-    margin-top: 10px;
-    margin-bottom: 5px;
-}
-
 .carousel-item {
-    height: 300px;
-    padding-left: 5px;
-    padding-right: 5px;
+  height: 300px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .d-block {
-    height: auto;
-    width: 100%;
-    object-fit: contain;
-    padding-top: 10px;
+  height: auto;
+  width: 100%;
+  object-fit: contain;
+  padding-top: 10px;
 }
 
 .carousel-control-next-icon {
-    color: black;
+  color: black;
 }
 
 .tituloIndex {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 24px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin: 10px 5px 5px 5px;
-    padding-top: 10px;
-    overflow-wrap: break-word;
-    text-shadow: 2px 2px rgb(126, 126, 126);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin: 10px 5px 5px 5px;
+  padding-top: 10px;
+  overflow-wrap: break-word;
+  text-shadow: 2px 2px rgb(126, 126, 126);
 }
 
 .inicio {
+  height: auto;
+  width: 100%;
+  font-style: italic;
+  overflow-wrap: break-word;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.tituloMarcas {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin: 5px 5px 5px 5px;
+  overflow-wrap: break-word;
+  text-shadow: 2px 2px rgb(126, 126, 126);
+}
+
+.marcas {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+.marcas .imgMarcas {
+  justify-self: center;
+}
+.marcas .imgMarcas img {
+  height: 200px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.contenedorReseñas {
+  height: 250px;
+  width: 100%;
+}
+.contenedorReseñas .reseñas {
+  height: 220px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  justify-content: center;
+  background-color: rgb(210, 214, 213);
+  border-radius: 15px 15px 15px 15px;
+}
+.contenedorReseñas .reseñas .tituloReseñas {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: black;
+}
+.contenedorReseñas .reseñas .textoreseñas {
+  width: 100%;
+  text-align: center;
+  padding: 15px 15px 15px 15px;
+  font-style: italic;
+  overflow-wrap: break-word;
+  color: black;
+}
+
+/*-------------TRABAJOS-----------*/
+.galeria {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+}
+.galeria .trabajos {
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: solid 2px black;
+  transition: all 0.5s;
+}
+.galeria .trabajos:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+/*--------------NOSOTROS-----------*/
+.nosotros1 {
+  display: grid;
+  grid-template-columns: 100%;
+}
+.nosotros1 .imgnosotros {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.nosotros1 .imgnosotros img {
+  height: 300px;
+  width: 100%;
+  object-fit: contain;
+}
+.nosotros1 .contenido {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  margin: 30px 30px 30px 30px;
+}
+
+.instalaciones {
+  text-align: center;
+}
+
+.galeriainstalaciones {
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 10px;
+  margin: 30px 0px 30px 0px;
+  height: 100%;
+}
+.galeriainstalaciones .inst1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.galeriainstalaciones .inst2 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.galeriainstalaciones .inst3 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+.galeriainstalaciones .inst4 {
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+.galeriainstalaciones img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*-------------SERVICIOS-----------*/
+.servicios {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+.servicios .imgservicios {
+  height: 300px;
+  width: 100%;
+  object-fit: contain;
+}
+.servicios .textoserv {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 18px;
+  text-align: center;
+}
+
+/*-------------CONTACTO------------*/
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 4fr 1fr;
+  background-color: transparent;
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 600px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  justify-items: center;
+  align-items: center;
+}
+form input {
+  height: 40px;
+  width: 95%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
+}
+form input .enviar {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+form textarea {
+  resize: none;
+  width: 95%;
+  height: 90%;
+  margin-top: 5px;
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/*---------------MEDIA-------------*/
+@media only screen and (min-width: 768px) {
+  main {
+    margin: 0 10px 0 10px;
+  }
+
+  /*--------index----------------*/
+  .carousel-item {
     height: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .carousel-item .d-block {
+    height: 400px;
     width: 100%;
+    object-fit: contain;
+    padding-top: 10px;
+  }
+
+  .inicio {
+    height: auto;
+    width: 500px;
+    margin: 0 auto;
     font-style: italic;
     overflow-wrap: break-word;
     text-align: center;
     margin-top: 10px;
     margin-bottom: 20px;
-}
+  }
 
-.tituloMarcas {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 24px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin: 5px 5px 5px 5px;
+  .marcas {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .marcas .imgMarcas {
+    justify-self: center;
+  }
+
+  .contenedorReseñas {
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+  }
+  .contenedorReseñas .textoreseñas {
+    height: auto;
+    width: auto;
+    margin: 0 auto;
+    font-style: italic;
     overflow-wrap: break-word;
-    text-shadow: 2px 2px rgb(126, 126, 126);
-}
+    text-align: center;
+  }
 
-.marcas {
-    display: grid;
-    height: 100%;
+  /*------------galeria----------*/
+  .imagenes {
+    margin: 0 20px 0 20px;
+  }
+  .imagenes .galeria {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+  }
+  .imagenes .galeria .trabajos {
+    height: 350px;
     width: 100%;
+  }
+
+  /*--------------NOSOTROS---------*/
+  .nosotros1 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .nosotros1 .imgnosotros {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .nosotros1 .contenido {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .galeriainstalaciones {
     grid-template-columns: 1fr 1fr;
     gap: 5px;
-}
+  }
+  .galeriainstalaciones .inst1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .galeriainstalaciones .inst2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .galeriainstalaciones .inst3 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .galeriainstalaciones .inst4 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
 
-.imgMarcas {
-    justify-self: center;
-}
+  /*------------servicios-------------*/
+  .servicios {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
 
-.imgMarcas img {
-    height: 200px;
-    width: 100%;
-    object-fit: contain;
-}
-
-.tituloReseñas {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 20px;
-}
-
-
-.contenedorReseñas {
-    height: 250px;
-    width: 100%;
-}
-
-.reseñas {
-    height: 220px;
+  /*------------contacto-------------*/
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 0.1fr 0.5fr 0.1fr;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 550px;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    justify-content: center;
-    background-color: rgb(231, 236, 235);
-    border-radius: 15px 15px 15px 15px;
-}
-
-.textoreseñas {
-    width: 100%;
-    text-align: center;
-    padding: 15px 15px 15px 15px;
-    font-style: italic;
-    overflow-wrap: break-word;
-}
-
-/*-------------TRABAJOS-----------*/
-
-.galeria {
-    height: 100%;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 100%;
-}
-
-.trabajos {
-    height: 350px;
-    width: 100%;
-    object-fit: cover;
-    margin-bottom: 10px;
-    border: solid 1px black;
-    transition: all 0.5s;
-}
-
-.trabajos:hover {
-    transform: scale(1.1);
-    transition: 0.5s;
-}
-
-
-
-/*--------------NOSOTROS-----------*/
-.nosotros1 {
-    display: grid;
-    grid-template-columns: 100%;
-}
-
-.imgnosotros {
-    grid-column: 1/2;
-    grid-row: 1/2;
-}
-
-.imgnosotros img {
-    height: 300px;
-    width: 100%;
-    object-fit: contain;
-}
-
-.contenido {
-    grid-column: 1/2;
-    grid-row: 2/3;
-    margin: 30px 30px 30px 30px;
-}
-
-.galeriainstalaciones {
-    display: grid;
-    grid-template-columns: 100%;
-    gap: 10px;
-}
-
-.inst1 {
-    grid-column: 1/2;
-    grid-row: 1/2;
-}
-
-.inst2 {
-    grid-column: 1/2;
-    grid-row: 2/3;
-}
-
-.inst3 {
-    grid-column: 1/2;
-    grid-row: 3/4;
-}
-
-.inst4 {
-    grid-column: 1/2;
-    grid-row: 4/5;
-}
-
-.instalaciones {
-    text-align: center;
-}
-
-.galeriainstalaciones {
-    margin: 30px 0px 30px 0px;
-    height: 100%;
-}
-
-.galeriainstalaciones img {
-    height: 300px;
-    width: 100%;
-    object-fit: cover;
-}
-
-/*-------------SERVICIOS-----------*/
-.imgservicios {
-    height: 300px;
-    width: 100%;
-    object-fit: contain;
-}
-
-.textoserv {
-    margin-left: 10px;
-    margin-right: 10px;
-    font-size: 18px;
-    text-align: center;
-}
-
-.servicios {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-}
-
-/*-------------CONTACTO------------*/
-form {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 4fr 1fr;
-    background-color: rgb(0, 0, 0);
-    padding-left: 5px;
-    padding-right: 5px;
-    height: 600px;
-    width: 100%;
+    margin-bottom: 20px;
     justify-items: center;
     align-items: center;
-
-}
-
-textarea {
+  }
+  form .nombre {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  form .apellido {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  form .mail {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  form .telefono {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  form .mensaje {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+  form .enviar {
+    grid-column: 1/3;
+    grid-row: 4/5;
+    width: 30%;
+  }
+  form textarea {
     resize: none;
     width: 95%;
     height: 90%;
     margin-top: 5px;
     font-size: 16px;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-input {
+    font-family: "Times New Roman", Times, serif;
+  }
+  form input {
     height: 40px;
-    width: 95%;
+    width: 90%;
+    font-size: 16px;
+    font-family: "Times New Roman", Times, serif;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /*---------index---------*/
+  main .index {
+    margin: 0px 30px 0px 30px;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  .carousel-item {
+    height: auto;
+  }
+  .carousel-item .d-block {
+    height: 550px;
+    width: 100%;
+    object-fit: contain;
+    padding-top: 10px;
+  }
+
+  .tituloIndex {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 22px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .marcas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px;
+  }
+  .marcas .imgMarcas {
+    height: 200px;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .reseñas {
+    height: 250px;
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    justify-content: center;
+    background-color: rgb(231, 236, 235);
+  }
+  .reseñas .textoreseñas {
+    padding: 15px 15px 15px 15px;
+  }
+
+  /*------------galeria----------*/
+  .imagenes {
+    margin: 0 40px 0 40px;
+  }
+  .imagenes .galeria {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .imagenes .galeria .trabajos {
+    height: 450px;
+    width: 100%;
+  }
+
+  /*------------NOSOTROS---------*/
+  .nosotros1 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .nosotros1 .imgnosotros {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .nosotros1 .contenido {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .galeriainstalaciones {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .galeriainstalaciones .inst1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .galeriainstalaciones .inst2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .galeriainstalaciones .inst3 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  .galeriainstalaciones .inst4 {
+    grid-column: 4/5;
+    grid-row: 1/2;
+  }
+
+  /*-----------servicios----------*/
+  .servicios {
+    display: flex;
+    flex-direction: row;
+  }
+  .servicios .imgservicios {
+    height: 300px;
+    width: 500px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    object-fit: contain;
+  }
+  .servicios .textoserv {
+    margin: 30px 30px 30px 30px;
+  }
+
+  /*------------contacto-----------*/
+  form {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 0.2fr 0.5fr 0.2fr;
+    gap: 5px;
+    height: 500px;
+    width: 650px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    border: solid 3px rgb(29, 27, 27);
+  }
+  form .nombre {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-self: end;
+  }
+  form .apellido {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: start;
+  }
+  form .mail {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-self: end;
+  }
+  form .telefono {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-self: start;
+  }
+  form .mensaje {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    height: 150px;
+  }
+  form .enviar {
+    grid-column: 1/3;
+    grid-row: 4/5;
+    width: 30%;
+  }
+  form textarea {
+    resize: none;
+    width: 510px;
+    margin-top: 5px;
+    font-size: 16px;
+    font-family: "Times New Roman", Times, serif;
+  }
+  form input {
+    height: 40px;
+    width: 250px;
     margin-top: 5px;
     margin-bottom: 5px;
     font-size: 16px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Times New Roman", Times, serif;
+  }
 }
 
-.enviar {
-    width: 50%;
-}
-
-/*---------------MEDIA-------------*/
-
-@media only screen and (min-width: 768px) {
-    main {
-        margin: 0 10px 0 10px;
-    }
-
-    /*--------index----------------*/
-    .carousel-item {
-        height: auto;
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-
-    .d-block {
-        height: 400px;
-        width: 100%;
-        object-fit: contain;
-        padding-top: 10px;
-    }
-
-    .inicio {
-        height: auto;
-        width: 500px;
-        margin: 0 auto;
-        font-style: italic;
-        overflow-wrap: break-word;
-        text-align: center;
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
-
-    .marcas {
-        grid-template-columns: 1fr 1fr 1fr;
-
-    }
-
-    .imgMarcas {
-        justify-self: center;
-    }
-
-    .contenedorReseñas {
-        margin-left: auto;
-        margin-right: auto;
-        width: 500px;
-    }
-
-    .textoreseñas {
-        height: auto;
-        width: auto;
-        margin: 0 auto;
-        font-style: italic;
-        overflow-wrap: break-word;
-        text-align: center;
-    }
-
-    /*------------galeria----------*/
-    .imagenes {
-        margin: 0 20px 0 20px;
-    }
-
-    .galeria {
-        grid-template-columns: 1fr 1fr;
-        column-gap: 10px;
-    }
-
-    .trabajos {
-        height: 350px;
-        width: 100%;
-    }
-
-    /*--------------NOSOTROS---------*/
-    .nosotros1 {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .imgnosotros {
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-
-    .contenido {
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
-
-    .galeriainstalaciones {
-        grid-template-columns: 1fr 1fr;
-        gap: 5px;
-    }
-
-    .inst1 {
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-
-    .inst2 {
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
-
-    .inst3 {
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
-
-    .inst4 {
-        grid-column: 2/3;
-        grid-row: 2/3;
-    }
-
-    /*------------servicios-------------*/
-    .servicios {
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-    }
-
-    /*------------contacto-------------*/
-    form {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.1fr 0.1fr 0.5fr 0.1fr;
-        background-color: rgb(0, 0, 0);
-        padding-left: 5px;
-        padding-right: 5px;
-        height: 550px;
-        width: 100%;
-        margin-bottom: 20px;
-        justify-items: center;
-        align-items: center;
-    }
-
-    .nombre {
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-
-    .apellido {
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
-
-    .mail {
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
-
-    .telefono {
-        grid-column: 2/3;
-        grid-row: 2/3;
-    }
-
-    .mensaje {
-        grid-column: 1/3;
-        grid-row: 3/4;
-    }
-
-    .enviar {
-        grid-column: 1/3;
-        grid-row: 4/5;
-        width: 30%;
-    }
-
-    textarea {
-        resize: none;
-        width: 95%;
-        height: 90%;
-        margin-top: 5px;
-        font-size: 16px;
-        font-family: 'Times New Roman', Times, serif;
-    }
-
-    input {
-        height: 40px;
-        width: 90%;
-        font-size: 16px;
-        font-family: 'Times New Roman', Times, serif;
-    }
-}
-
-@media only screen and (min-width: 1024px) {
-
-    /*---------index---------*/
-    main .index {
-        margin: 0px 30px 0px 30px;
-    }
-
-    main h1 {
-        text-align: center;
-        font-size: 20px;
-        margin-top: 10px;
-        margin-bottom: 5px;
-    }
-
-    .carousel-item {
-        height: auto;
-    }
-
-    .d-block {
-        height: 550px;
-        width: 100%;
-        object-fit: contain;
-        padding-top: 10px;
-    }
-
-    .tituloIndex {
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 22px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-
-    .marcas {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        gap: 5px;
-    }
-
-    .imgMarcas {
-        height: 200px;
-        width: 100%;
-        object-fit: contain;
-    }
-
-    .reseñas {
-        height: 250px;
-        width: 550px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 10px;
-        justify-content: center;
-        background-color: rgb(231, 236, 235);
-    }
-
-    .textoreseñas {
-        padding: 15px 15px 15px 15px;
-    }
-
-    /*------------galeria----------*/
-    .imagenes {
-        margin: 0 40px 0 40px;
-    }
-
-    .galeria {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .trabajos {
-        height: 450px;
-        width: 100%;
-    }
-
-    /*------------NOSOTROS---------*/
-    .nosotros1 {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .imgnosotros {
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-
-    .contenido {
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
-
-    .galeriainstalaciones {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-
-    .inst1 {
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-
-    .inst2 {
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
-
-    .inst3 {
-        grid-column: 3/4;
-        grid-row: 1/2;
-    }
-
-    .inst4 {
-        grid-column: 4/5;
-        grid-row: 1/2;
-    }
-
-    /*-----------servicios----------*/
-    .servicios {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .imgservicios {
-        height: 300px;
-        width: 500px;
-        margin-top: 20px;
-        margin-bottom: 15px;
-        object-fit: contain;
-    }
-
-    .textoserv {
-        margin: 30px 30px 30px 30px;
-    }
-
-    /*------------contacto-----------*/
-
-    form {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.5fr 0.5fr 1fr 0.5fr;
-        gap: 10px;
-        background-color: rgb(0, 0, 0);
-        height: 400px;
-        width: 650px;
-        text-align: center;
-        padding-top: 60px;
-        padding-bottom: 60px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 100px;
-        margin-top: 50px;
-    }
-
-    .nombre {
-        grid-column: 1/2;
-        grid-row: 1/2;
-        justify-self: end;
-    }
-
-    .apellido {
-        grid-column: 2/3;
-        grid-row: 1/2;
-        justify-self: start;
-    }
-
-    .mail {
-        grid-column: 1/2;
-        grid-row: 2/3;
-        justify-self: end;
-    }
-
-    .telefono {
-        grid-column: 2/3;
-        grid-row: 2/3;
-        justify-self: start;
-    }
-
-    .mensaje {
-        grid-column: 1/3;
-        grid-row: 3/4;
-        height: 150px;
-    }
-
-    .enviar {
-        grid-column: 1/3;
-        grid-row: 4/5;
-        width: 30%;
-    }
-
-    textarea {
-        resize: none;
-        width: 408px;
-        margin-top: 5px;
-        font-size: 16px;
-        font-family: 'Times New Roman', Times, serif;
-    }
-
-    input {
-        height: 30px;
-        width: 200px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-        font-size: 16px;
-        font-family: 'Times New Roman', Times, serif;
-    }
-}
+/*# sourceMappingURL=estilo.css.map */
