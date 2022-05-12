@@ -18,7 +18,6 @@ body {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 body main {
-  margin: 0;
   border-top: solid 5px rgb(113, 0, 117);
 }
 body header {
@@ -41,6 +40,10 @@ body header div img {
   object-fit: contain;
 }
 
+#navegacion {
+  color: rgb(208, 208, 208);
+}
+
 .navbar {
   background-color: black;
 }
@@ -51,7 +54,7 @@ body header div img {
 
 h1 {
   text-align: center;
-  font-size: 20px;
+  font-size: 24px;
   margin-top: 10px;
   margin-bottom: 5px;
 }
@@ -132,7 +135,7 @@ footer .redes i:hover {
   text-align: center;
   text-transform: uppercase;
   font-size: 24px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 10px 5px 5px 5px;
   padding-top: 10px;
   overflow-wrap: break-word;
@@ -145,6 +148,8 @@ footer .redes i:hover {
   font-style: italic;
   overflow-wrap: break-word;
   text-align: center;
+  padding-right: 5px;
+  padding-left: 5px;
   margin-top: 10px;
   margin-bottom: 20px;
 }
@@ -153,7 +158,7 @@ footer .redes i:hover {
   text-align: center;
   text-transform: uppercase;
   font-size: 24px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 5px 5px 5px 5px;
   overflow-wrap: break-word;
   text-shadow: 2px 2px rgb(126, 126, 126);
@@ -193,7 +198,7 @@ footer .redes i:hover {
 .contenedorReseñas .reseñas .tituloReseñas {
   text-align: center;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 24px;
   color: black;
 }
 .contenedorReseñas .reseñas .textoreseñas {
@@ -335,11 +340,14 @@ form textarea {
 
 /*---------------MEDIA-------------*/
 @media only screen and (min-width: 768px) {
-  main {
-    margin: 0 10px 0 10px;
+  /*--------index----------------*/
+  #carouselExampleIndicators {
+    height: auto;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  /*--------index----------------*/
   .carousel-item {
     height: auto;
     padding-left: 5px;
@@ -385,9 +393,11 @@ form textarea {
   }
 
   /*------------galeria----------*/
-  .imagenes {
-    margin: 0 20px 0 20px;
+  .margenTablet, .galeriainstalaciones, .nosotros1 {
+    margin-left: 25px;
+    margin-right: 25px;
   }
+
   .imagenes .galeria {
     grid-template-columns: 1fr 1fr;
     column-gap: 10px;
@@ -402,33 +412,45 @@ form textarea {
     grid-template-columns: 1fr 1fr;
   }
   .nosotros1 .imgnosotros {
-    grid-column: 1/2;
-    grid-row: 1/2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
   }
   .nosotros1 .contenido {
-    grid-column: 2/3;
-    grid-row: 1/2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
   }
 
   .galeriainstalaciones {
     grid-template-columns: 1fr 1fr;
-    gap: 5px;
+    gap: 10px;
   }
   .galeriainstalaciones .inst1 {
-    grid-column: 1/2;
-    grid-row: 1/2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
   }
   .galeriainstalaciones .inst2 {
-    grid-column: 2/3;
-    grid-row: 1/2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
   }
   .galeriainstalaciones .inst3 {
-    grid-column: 1/2;
-    grid-row: 2/3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
   }
   .galeriainstalaciones .inst4 {
-    grid-column: 2/3;
-    grid-row: 2/3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
   }
 
   /*------------servicios-------------*/
@@ -453,28 +475,40 @@ form textarea {
     align-items: center;
   }
   form .nombre {
-    grid-column: 1/2;
-    grid-row: 1/2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
   }
   form .apellido {
-    grid-column: 2/3;
-    grid-row: 1/2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
   }
   form .mail {
-    grid-column: 1/2;
-    grid-row: 2/3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
   }
   form .telefono {
-    grid-column: 2/3;
-    grid-row: 2/3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
   }
   form .mensaje {
-    grid-column: 1/3;
-    grid-row: 3/4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
   }
   form .enviar {
-    grid-column: 1/3;
-    grid-row: 4/5;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
     width: 30%;
   }
   form textarea {
@@ -505,11 +539,18 @@ form textarea {
     margin-bottom: 5px;
   }
 
+  #carouselExampleIndicators {
+    height: auto;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .carousel-item {
     height: auto;
   }
   .carousel-item .d-block {
-    height: 550px;
+    height: 500px;
     width: 100%;
     object-fit: contain;
     padding-top: 10px;
@@ -548,9 +589,10 @@ form textarea {
   }
 
   /*------------galeria----------*/
-  .imagenes {
-    margin: 0 40px 0 40px;
+  .margenDesktop, .bloqueserv {
+    margin: 0 30px 0 30px;
   }
+
   .imagenes .galeria {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -564,32 +606,45 @@ form textarea {
     grid-template-columns: 1fr 1fr;
   }
   .nosotros1 .imgnosotros {
-    grid-column: 1/2;
-    grid-row: 1/2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
   }
   .nosotros1 .contenido {
-    grid-column: 2/3;
-    grid-row: 1/2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
   }
 
   .galeriainstalaciones {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
   }
   .galeriainstalaciones .inst1 {
-    grid-column: 1/2;
-    grid-row: 1/2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
   }
   .galeriainstalaciones .inst2 {
-    grid-column: 2/3;
-    grid-row: 1/2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
   }
   .galeriainstalaciones .inst3 {
-    grid-column: 3/4;
-    grid-row: 1/2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
   }
   .galeriainstalaciones .inst4 {
-    grid-column: 4/5;
-    grid-row: 1/2;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
   }
 
   /*-----------servicios----------*/
@@ -599,13 +654,13 @@ form textarea {
   }
   .servicios .imgservicios {
     height: 300px;
-    width: 500px;
+    width: 450px;
     margin-top: 20px;
     margin-bottom: 15px;
     object-fit: contain;
   }
   .servicios .textoserv {
-    margin: 30px 30px 30px 30px;
+    padding: 30px 30px 30px 30px;
   }
 
   /*------------contacto-----------*/
