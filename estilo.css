@@ -446,7 +446,7 @@ footer .redes i {
 }
 
 footer .mapa {
-  padding-bottom: 10px;
+  padding-bottom: 0px;
 }
 
 .derechos {
@@ -454,7 +454,8 @@ footer .mapa {
   background-color: dimgrey;
   font-size: 16px;
   font-style: italic;
-  padding-bottom: 0;
+  padding-bottom: 5px;
+  margin-bottom: 0;
 }
 
 /*-----------index------------*/
@@ -801,7 +802,7 @@ form textarea {
     text-align: center;
   }
   /*------------galeria----------*/
-  .margenTablet, .nosotros1, .galeriainstalaciones {
+  .margenTablet, .nosotros1, .galeriainstalaciones, .servicios {
     margin-left: 25px;
     margin-right: 25px;
   }
@@ -878,6 +879,17 @@ form textarea {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     gap: 20px;
+  }
+  .servicios .imgservicios {
+    height: 300px;
+    width: 450px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .servicios .textoserv {
+    padding: 30px 0px 30px 30px;
   }
   /*------------contacto-------------*/
   form {
