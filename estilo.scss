@@ -10,8 +10,7 @@ $tablet: 768px;
 $desktop: 1024px;
 $colorletra1: rgb(208, 208, 208);
 //mapa
-$tamañodefuente: (
-    "small": 16px,
+$tamañodefuente: ("small": 16px,
     "ms": 20px,
     "medium": 24px,
     "ml": 28px,
@@ -29,7 +28,7 @@ body {
     background: linear-gradient(to top, rgb(153, 153, 153), #000000);
 
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+
     main {
         border-top: solid 8px rgb(113, 0, 117);
     }
@@ -542,11 +541,12 @@ footer {
         margin-right: 10px;
         font-size: map-get($map: $tamañodefuente, $key: small);
         text-align: center;
-        h2{
+
+        h2 {
             @extend .tituloIndex;
             padding-top: 0;
+        }
     }
-}
 }
 
 /*-------------CONTACTO------------*/
@@ -714,17 +714,27 @@ form {
     .servicios {
         grid-template-columns: 1fr 1fr;
         gap: 20px;
-        @extend .margenTablet ;
-        .imgservicios{
-            height: 300px;
-            width: 450px;
-            margin-top: 20px;
+        @extend .margenTablet;
 
+        .imgservicios {
+            height: 300px;
+            width: 380px;
+            margin-top: 20px;
             margin-bottom: 15px;
             object-fit: contain;
         }
+
         .textoserv {
             padding: 30px 0px 30px 30px;
+
+            h2 {
+                font-size: map-get($map: $tamañodefuente, $key: ms);
+            }
+
+            p {
+                font-size: map-get($map: $tamañodefuente, $key: small);
+
+            }
         }
     }
 
