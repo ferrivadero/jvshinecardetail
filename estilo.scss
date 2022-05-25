@@ -22,7 +22,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: $colorletra1;
     background: rgb(113, 0, 117);
-    background: radial-gradient(circle, rgba(113, 0, 117,1) 0%, rgb(0, 0, 0) 50%);
+    background: radial-gradient(circle, rgba(113, 0, 117, 1) 0%, rgb(0, 0, 0) 50%);
 
     main {
         border-top: solid 8px rgb(113, 0, 117);
@@ -55,9 +55,11 @@ body {
     color: $colorletra1;
     margin: 5px 10px 5px 10px;
 }
-.navbar-nav li  {
+
+.navbar-nav li {
     position: relative;
-    &::before{
+
+    &::before {
         content: "";
         height: 3px;
         width: 0%;
@@ -67,7 +69,8 @@ body {
         bottom: 7px;
         transition: 0.3s ease-out;
     }
-    &:hover::before{
+
+    &:hover::before {
         width: 70%;
     }
 }
@@ -412,14 +415,16 @@ footer {
         }
     }
 }
-.contenedorReseñas{
+
+.contenedorReseñas {
     height: auto;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
-    .video iframe{
+
+    .video iframe {
         padding-top: 15px;
         height: 250px;
         width: 360px;
@@ -427,18 +432,21 @@ footer {
         margin-right: auto;
     }
 }
-#reseñas{
+
+#reseñas {
     height: 250px;
     width: 90%;
     margin-bottom: 15px;
     margin-top: 10px;
+
     #client-testimonial-carousel {
-    margin-left: 0;
-    margin-right: 0;
-    height: auto;
-    width: auto;
+        margin-left: 0;
+        margin-right: 0;
+        height: 220px;
+        width: auto;
     }
 }
+
 /*-------------TRABAJOS-----------*/
 
 .galeria {
@@ -451,9 +459,9 @@ footer {
         height: 350px;
         width: 100%;
         object-fit: cover;
-       // box-shadow: 5px black;
+        // box-shadow: 5px black;
         margin-bottom: 20px;
-       // 
+        // 
     }
 }
 
@@ -560,6 +568,7 @@ form {
     margin-bottom: 10px;
     justify-items: center;
     align-items: center;
+
     textarea {
         border-radius: 15px;
         resize: none;
@@ -567,7 +576,7 @@ form {
         height: 90%;
         margin-top: 5px;
         font-size: map-get($map: $tamañodefuente, $key: "small");
-        font-family: 'Times New Roman', Times, serif; 
+        font-family: 'Times New Roman', Times, serif;
     }
 
     input {
@@ -580,6 +589,7 @@ form {
         font-family: 'Times New Roman', Times, serif;
     }
 }
+
 #enviar {
     border-radius: 10px;
     width: 50%;
@@ -631,28 +641,32 @@ form {
         }
     }
 
-    .contenedorReseñas{
+    .contenedorReseñas {
         height: 350px;
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-items: center;
         align-items: center;
-        .video iframe{
+
+        .video iframe {
             height: 250px;
             width: 380px;
         }
     }
-    #reseñas{
+
+    #reseñas {
         height: 220px;
         width: 380px;
+
         #client-testimonial-carousel {
-        margin-left: 0;
-        margin-right: 0;
-        height: auto;
-        width: auto;
+            margin-left: 0;
+            margin-right: 0;
+            height: auto;
+            width: auto;
         }
     }
+
     /*------------galeria----------*/
     .margenTablet {
         margin-left: 25px;
@@ -664,18 +678,21 @@ form {
             grid-template-columns: 1fr 1fr;
             column-gap: 15px;
             padding-top: 10px;
+
             .trabajos {
                 border: solid 2px black;
                 height: 350px;
                 width: 100%;
                 transition: all 0.5s;
+
                 &:hover {
-                        transform: scale(1.1);
-                        transition: 0.3s;
+                    transform: scale(1.1);
+                    transition: 0.3s;
+                }
             }
         }
     }
-}
+
     /*--------------NOSOTROS---------*/
 
     @mixin grid ($inicioColumna, $finColumna, $inicioFila, $finFila) {
@@ -866,7 +883,8 @@ form {
             object-fit: contain;
         }
     }
-    .contenedorReseñas{
+
+    .contenedorReseñas {
         height: 350px;
         width: 100%;
         display: grid;
@@ -874,21 +892,23 @@ form {
         justify-items: center;
         align-items: center;
         gap: 10px;
-        .video iframe{
+
+        .video iframe {
             height: 260px;
             width: 480px;
         }
-        }
+    }
 
-    #reseñas{
+    #reseñas {
         height: 250px;
         width: 480px;
+
         #client-testimonial-carousel {
-        margin-left: 0;
-        margin-right: 0;
-        height: 200px;
-        width: auto;
-       }
+            margin-left: 0;
+            margin-right: 0;
+            height: 200px;
+            width: auto;
+        }
     }
 
     /*------------galeria----------*/
@@ -1032,6 +1052,6 @@ form {
             font-size: 16px;
             font-family: 'Times New Roman', Times, serif;
         }
-        
+
     }
 }
