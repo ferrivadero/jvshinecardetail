@@ -31,26 +31,26 @@
     <nav class="navbar navbar-expand-md  navbar-dark">
         <!-- Toggler/collapsibe Button -->
         <button id="boton" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
+            <span id="navegacion" class="navbar-toggler-icon"></span>
         </button>
 
         <!-- Navbar links -->
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Inicio</a>
+                    <a id="navegacion" class="nav-link" href="index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="trabajos.html">Trabajos</a>
+                    <a id="navegacion" class="nav-link" href="trabajos.html">Trabajos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    <a id="navegacion" class="nav-link" href="nosotros.html">Nosotros</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="servicios.html">Servicios</a>
+                    <a id="navegacion" class="nav-link" href="servicios.html">Servicios</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contacto.html">Contacto</a>
+                    <a id="navegacion" class="nav-link" href="contacto.html">Contacto</a>
                 </li>
             </ul>
         </div>
@@ -60,15 +60,15 @@
         <div class="sign">
             <span>co</span><span class="fast-flicker">n</span>tac<span class="flicker">t</span>o
         </div>
-        <div class="formulario">
+        <div class="formulario gradient-border">
             <form action="enviar.php" method="post">
-                <input class="nombre" type="text" required placeholder="Nombre">
-                <input class="apellido" type="text" required placeholder="Apellido">
-                <input class="mail" type="email" required placeholder="Ingresa tu mail">
-                <input class="telefono" type="number" required placeholder="Telefono">
+                <input class="nombre" type="text" required placeholder=" Nombre">
+                <input class="apellido" type="text" required placeholder=" Apellido">
+                <input class="mail" type="email" required placeholder=" Ingresa tu mail">
+                <input class="telefono" type="number" required placeholder=" Telefono">
                 <textarea class="mensaje" name="mensaje" id="" cols="30" rows="10" required
-                    placeholder="Mensaje..."></textarea>
-                <input class="enviar" type="submit" value="Enviar">
+                    placeholder=" Mensaje..."></textarea>
+                <input id="enviar" type="submit" value="Enviar">
             </form>
         </div>
     </main>
